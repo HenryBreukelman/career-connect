@@ -14,7 +14,10 @@ a {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 header {
   height: 60px;
-  background-color: lightgray;
+}
+
+header > div {
+  line-height: 60px;
 }
 
 .logo-wrapper {
@@ -24,5 +27,57 @@ header {
 }
 
 .search-wrapper {
-  line-height: 60px;
+  input {
+    background: var(--very-light-gray) url(../media/search.png) no-repeat 10px 10px;
+    height: 35px;
+    width: 200px;
+    padding: 0 15px 0 35px;
+    border-radius: 20px;
+  }
+}
+
+nav ul li a {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.user-wrapper img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.notification-wrapper, .message-wrapper {
+  height: 40px;
+  width: 40px;
+  background-color: var(--very-light-gray);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+
+  i {
+    font-size: 20px;
+  }
+}
+
+.message-wrapper i {
+  color: var(--accent-purple);
+}
+
+.notification-wrapper i {
+  color: var(--accent-orange);
+}
+
+.message-wrapper:hover {
+  background-color: rgba(141, 108, 171, 0.15);
+  
+}
+
+.notification-wrapper:hover {
+  background-color: rgba(230, 132, 35, 0.15);
+}
+
+main {
+  height: 1000px;
+  background-color: var(--very-light-gray);
 }
