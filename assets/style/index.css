@@ -1,1 +1,21 @@
 @import url('base.css');
+
+.column {
+  width: 50%;
+  height: calc(100svh);
+  padding: 20px;
+}
+
+.image {
+  background: var(--black) url(../media/login-image.jpg) center bottom / cover no-repeat;
+}
+
+.image h2 {
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+form {
+  width: 100%;
+}
