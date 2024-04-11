@@ -1,2 +1,28 @@
 @import url('base.css');
 
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Universal                                            */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Header                                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+header {
+  height: 60px;
+  background-color: lightgray;
+}
+
+.logo-wrapper {
+  img {
+    height: 40px;
+  }
+}
+
+.search-wrapper {
+  line-height: 60px;
+}
