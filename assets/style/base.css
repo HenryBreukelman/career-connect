@@ -1,0 +1,49 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Utility Classes                                      */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Base                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+:root {
+  --black: #000;
+  --white: #fff;
+  --blue: #0077b5;
+  --dark-gray: #313335;
+  --medium-gray: #86888a;
+  --light-gray: #caccce;
+  --very-light-gray: #f5f5f6;
+  --accent-blue: #00a0dc;
+  --accent-purple: #8d6cab;
+  --accent-red: #dd5143;
+  --accent-orange: #e68523;
+}
+
+body {
+  font-family: 'Noto Sans', 'Open Sans', arial, sans-serif;
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
