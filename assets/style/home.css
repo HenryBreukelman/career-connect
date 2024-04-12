@@ -89,6 +89,7 @@ nav ul li a {
   grid-template-columns: 1fr 2fr 1fr;
   align-items: start;
   gap: 20px;
+  padding-top: 20px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
