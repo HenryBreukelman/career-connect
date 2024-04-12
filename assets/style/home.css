@@ -223,6 +223,12 @@ nav ul li a {
 .send-icon {
   color: var(--blue);
   font-size: 26px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.send-icon:hover {
+  color: var(--accent-blue);
 }
 
 /* Friends post */
