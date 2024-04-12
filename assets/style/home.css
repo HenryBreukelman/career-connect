@@ -126,8 +126,6 @@ nav ul li a {
   }
 }
 
-
-
 .user-insta {
   align-items: center;
 }
@@ -169,6 +167,23 @@ nav ul li a {
     font-weight: 600;
     transition: all 0.25s ease-in-out;
   }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Posts                                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.create-post, .friend-post {
+  padding: 20px;
+}
+
+.create-post {
+  flex-direction: column;
+}
+
+.post-input textarea{
+  resize: none;
+  height: 140px;
+  width: 100%;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
