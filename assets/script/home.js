@@ -13,6 +13,33 @@ const fullNames = utils.selectAll('.person-container p:nth-of-type(1)');
 const cities = utils.selectAll('.person-container p:nth-of-type(2)');
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Set Info                                             */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+function setUsers(userArr) {
+  setProfilePictures(userArr);
+  setFullNames(userArr);
+  setCities(userArr);
+}
+
+function setProfilePictures(userArr) {
+  profilePictures.forEach((pic, index) => {
+    pic.setAttribute('src', `${userArr[index].picture.medium}`);
+  })
+}
+
+function setFullNames(userArr) {
+  fullNames.forEach((fullName, index) => {
+    fullName.innerText = `${userArr[index].name.first} ${userArr[index].name.last}`
+  });
+}
+
+function setCities(userArr) {
+  cities.forEach((city, index) => {
+    city.innerText = `${userArr[index].location.city}`
+  })
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Fetch Users                                          */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 const options = {
@@ -34,11 +61,11 @@ async function getUsers(endpoint) {
 
     const users = await result.json();
     const userList = users.results;
-    console.log(userList);
+    return userList;
   } catch(error) {
     console.log(error.message);
   }
 }
 
-getUsers(URL);
+console.log(getUsers(URL));
 
