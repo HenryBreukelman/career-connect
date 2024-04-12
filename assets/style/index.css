@@ -1,22 +1,29 @@
 @import url('base.css');
 
 .column {
-  width: 50%;
+
   height: calc(100svh);
   padding: 20px 40px 20px 20px;
 }
 
 .image {
-  background: var(--black) url(../media/login-image.jpg) center bottom / cover no-repeat;
+  width: 40%;
+  background: var(--white) url(../media/login-backgound.jpg) center bottom / cover no-repeat;
+}
+
+.image img {
+  height: 35px;
+  margin: 11px 10px 0 0;
 }
 
 .image h2 {
-  color: var(--white);
+  color: var(--blue);
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .login-box {
+  width: 60%;
   position: relative;
 }
 
@@ -33,19 +40,26 @@ form h2 {
   color: var(--blue);
   font-size: 30px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 input[type="text"] {
-  margin-top: 12px;
   background-color:rgba(0 118 181 / 0.1);
   padding: 10px;
   width: 100%;
-  margin-top: 12px;
+  margin-top: 20px;
   border-radius: var(--small-border-radius);
 }
 
+.error {
+  height: 16px;
+  font-size: 14px;
+  color: #f00;
+}
+
 .forgot {
-  margin-top: 12px;
+  margin-top: 10px;
+  color: var(--medium-gray);
 }
 
 .forgot li {
@@ -54,7 +68,7 @@ input[type="text"] {
 }
 
 .forgot a {
-  color: var(--black);
+  color: var(--medium-gray);
   text-decoration: none;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
@@ -65,7 +79,7 @@ input[type="text"] {
 }
 
 input[type="button"] {
-  margin-top: 12px;
+  margin-top: 20px;
   width: 48%;
 }
 

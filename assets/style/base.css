@@ -38,6 +38,10 @@
   justify-content: space-between;
 }
 
+.hidden {
+  display: none;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Base                                                 */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -70,6 +74,7 @@ input[type="button"] {
   transition: all 0.25s ease-in-out;
   padding: 5px 10px;
   border-radius: var(--small-border-radius);
+  height: 50px;
 }
 
 .blue-button {

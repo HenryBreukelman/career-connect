@@ -19,15 +19,19 @@
   <body>
     <main>
       <div class="flex gap-20">
-        <section class="image column">
+        <section class="image column flex">
+          <img src="./assets/media/logo.png">
           <h2>CareerConnect</h2>
         </section>
         <section class="login-box column center">
-          <div class="form">
+          <div class="form center">
             <form>
               <h2>Welcome</h2>
-              <input type="text" placeholder="Username or Email">
-              <input type="text" placeholder="Password">
+              <input type="text" placeholder="Username or Email" class="username">
+              <input type="text" placeholder="Password" class="password">
+              <div class="error">
+                <p class="error-popup hidden">Incorect Username or password</p>
+              </div>
               <div class="flex spacebetween forgot">
                 <div>
                   <input type="checkbox" id="email" value="Emails">
@@ -36,7 +40,7 @@
                 <li><a href="#">Forgot password?</a></li>
               </div>
               <div class="flex spacebetween">
-                <input type="button" value="Login" class="blue-button">
+                <input type="button" value="Login" class="blue-button login-button">
                 <input type="button" value="Sign up" class="white-button">
               </div>
             </form>
