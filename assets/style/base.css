@@ -22,6 +22,10 @@
   gap: 20px;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Base                                                 */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -46,7 +50,7 @@ body {
 }
 
 .container {
-  width: min(100% - 30px, 1080px);
+  width: min(100% - 30px, 1280px);
   margin-inline: auto;
 }
 
