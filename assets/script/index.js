@@ -13,30 +13,39 @@ import * as utils from './utils.js';
 /*  Selectors                                            */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-const loginButton = utils.select('.login-button')
-const username = utils.select('.username')
-const password = utils.select('.password')
-const errorPopup = utils.select('.error-popup')
+const loginButton = utils.select('.login-button');
+const username = utils.select('.username');
+const password = utils.select('.password');
+const errorPopup = utils.select('.error-popup');
 
-//add localstorage for this
-let userUsername = 'admin@email.com'
-let userPassword = 'admin'
+const user = {
+  userUsername: 'admin@email.com',
+  userPassword: 'admin'
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Functions                                            */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+function setUserInfo() {
+  localStorage.setItem('user', JSON.stringify(user));
+}
+
 function checkLogin() {
-  if (username.value === userUsername && password.value === userPassword) {
-    correctLogin()
+  let savedUser = localStorage.getItem('user');
+  let userInfo = JSON.parse(savedUser);
+  if (
+    username.value === userInfo.userUsername && password.value === userInfo.userPassword
+  ) {
+    correctLogin();
   } else {
-    wrongLogin()
+    wrongLogin();
   }
 }
 
 function correctLogin() {
   errorPopup.classList.add('hidden');
-  window.location.href = 'home.html'
+  window.location.href = 'home.html';
 }
 
 function wrongLogin() {
@@ -48,3 +57,4 @@ function wrongLogin() {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 utils.listen('click', loginButton, checkLogin);
+utils.listen('load', window, setUserInfo);
