@@ -326,3 +326,13 @@ nav ul li a {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Footer                                               */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+footer {
+  height: 70px;
+  line-height: 70px;
+  background-color: var(--light-gray);
+
+  p {
+    color: var(--dark-gray);
+    font-weight: 600;
+  }
+}
