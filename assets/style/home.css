@@ -98,12 +98,77 @@ nav ul li a {
   background-color: var(--white);
 }
 
-.user-info img {
-  border-radius: 50%;
+.user-info {
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+  }
+
+  h2 {
+    line-height: 1;
+  }
+
+  p {
+    color: var(--dark-gray);
+  }
+
+  span {
+    color: var(--medium-gray);
+  }
+
+  i {
+    color: var(--blue);
+  }
 }
+
+
 
 .user-insta {
   align-items: center;
+}
+
+.connections {
+  div {
+    flex: 1;
+    border-top: 2px solid var(--very-light-gray);
+    border-bottom: 2px solid var(--very-light-gray);
+    padding: 20px 0;
+
+    p:first-child {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    p:nth-child(2) {
+      color: var(--medium-gray);
+    }
+  }
+
+  div:first-child {
+    border-right: 2px solid var(--very-light-gray);
+  }
+}
+
+.premium-promotion {
+  flex-direction: column;
+  padding: 20px;
+
+  p {
+    color: var(--medium-gray);
+  }
+  button {
+    text-transform: uppercase;
+    padding: 12px 0;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.25s ease-in-out;
+  }
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
