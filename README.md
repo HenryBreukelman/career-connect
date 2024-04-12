@@ -1,13 +1,25 @@
 ## CareerConnect
-An LinkedIn based website useing HTML, CSS and JavaScript
-### Demo 
-Username: admin@email.com <br />
-Password: admin <br />
-Click [here](https://henrybreukelman.github.io/window-object/) to test
 
-### By:
--[Evan Kennedy](https://github.com/evanckennedy) <br />
--[Henry Breukelman](https://github.com/HenryBreukelman)
+CareerConnect is a LinkedIn-inspired website built using HTML, CSS, and JavaScript. It aims to provide a platform for professional networking and career development.
+
+### Demo
+
+To try out CareerConnect, use the following login credentials:
+
+- **Username:** admin@email.com
+- **Password:** admin
+
+[Click here to test the demo.](https://henrybreukelman.github.io/career-connect/)
+
+### Features
+
+- **Login Authentication:** Users can log in using their username and password, with validation handled through local storage.
+- **Suggested Connections:** Display 10 people you may know on the homepage, utilizing the [Random User API](https://randomuser.me) for mock data.
+
+### Contributors
+
+- [Evan Kennedy](https://github.com/evanckennedy)
+- [Henry Breukelman](https://github.com/HenryBreukelman)
 
 <br />
 
