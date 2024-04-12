@@ -98,6 +98,7 @@ nav ul li a {
 .profile {
   text-align: center;
   background-color: var(--white);
+  border-radius: var(--small-border-radius);
 }
 
 .user-info {
@@ -181,6 +182,7 @@ nav ul li a {
 .create-post, .created-post-display {
   padding: 20px;
   background-color: var(--white);
+  border-radius: var(--small-border-radius);
 }
 
 /* User create post */
@@ -257,6 +259,7 @@ nav ul li a {
 
 .post-image img {
   width: 100%;
+  border-radius: var(--small-border-radius);
 }
 
 .post-actions {
@@ -276,7 +279,8 @@ nav ul li a {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .suggestions {
   background-color: var(--white);
-  padding: 20px
+  padding: 20px;
+  border-radius: var(--small-border-radius);
 }
 
 .suggestions h3 {
