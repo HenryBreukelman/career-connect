@@ -36,6 +36,7 @@ form h2 {
 }
 
 input[type="text"] {
+  margin-top: 12px;
   background-color:rgba(0 118 181 / 0.1);
   padding: 10px;
   width: 100%;
@@ -43,7 +44,28 @@ input[type="text"] {
   border-radius: var(--small-border-radius);
 }
 
+.forgot {
+  margin-top: 12px;
+}
+
+.forgot li {
+  cursor: default;
+  list-style: none;
+}
+
+.forgot a {
+  color: var(--black);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.forgot a:hover {
+  color: var(--blue);
+}
+
 input[type="button"] {
+  margin-top: 12px;
   width: 48%;
 }
 
@@ -51,4 +73,10 @@ input[type="button"] {
   position: fixed;
   bottom: 10px;
   right: 20px;
+}
+
+/* delet */
+
+.spacebetween {
+  justify-content: space-between;
 }
