@@ -268,6 +268,59 @@ nav ul li a {
     color: var(--medium-gray);
   }
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Suggestions                                          */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.suggestions {
+  background-color: var(--white);
+  padding: 20px
+}
+
+.suggestions h3 {
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--very-light-gray);
+  text-align: center;
+  font-weight: 600;
+}
+
+.person-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+  i {
+    color: var(--blue);
+  }
+}
+
+.person-container > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  div {
+    p {
+      line-height: 1.2;
+    }
+
+    p:first-child {
+      font-weight: 500;
+    }
+
+    p:nth-child(2) {
+      color: var(--medium-gray);
+    }
+  }
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Footer                                               */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
