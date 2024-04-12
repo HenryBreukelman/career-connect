@@ -52,3 +52,9 @@ input[type="button"] {
   bottom: 10px;
   right: 20px;
 }
+
+/* delet */
+
+.spacebetween {
+  justify-content: space-between;
+}
