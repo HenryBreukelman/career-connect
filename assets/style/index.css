@@ -48,16 +48,20 @@ input[type="text"] {
   margin-top: 12px;
 }
 
-li {
+.forgot li {
   cursor: default;
   list-style: none;
 }
 
-a {
+.forgot a {
   color: var(--black);
   text-decoration: none;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
+}
+
+.forgot a:hover {
+  color: var(--blue);
 }
 
 input[type="button"] {
