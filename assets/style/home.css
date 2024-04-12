@@ -24,6 +24,18 @@ header > div {
   line-height: 60px;
 }
 
+.header-left, .header-right {
+  width: 270px;
+}
+
+.header-left {
+  justify-content: start;
+}
+
+.header-right {
+  justify-content: end;
+}
+
 .logo-wrapper {
   img {
     height: 35px;
