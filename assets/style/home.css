@@ -256,6 +256,19 @@ nav ul li a {
 .post-image img {
   width: 100%;
 }
+
+.post-actions {
+  align-items: center;
+  gap: 30px;
+
+  > div {
+    cursor: pointer;
+  }
+
+  i, span {
+    color: var(--medium-gray);
+  }
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Footer                                               */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
