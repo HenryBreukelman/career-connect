@@ -7,13 +7,19 @@
 }
 
 .image {
-  background: var(--black) url(../media/login-image.jpg) center bottom / cover no-repeat;
+  background: var(--black) url(../media/todd-trapani-Fgp8p6KD_Ks-unsplash.jpg) center bottom / cover no-repeat;
+  max-width: 650px;
+}
+
+.image img {
+  height: 35px;
+  margin: 11px 10px 0 0;
 }
 
 .image h2 {
-  color: var(--white);
+  color: var(--blue);
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .login-box {
@@ -33,19 +39,20 @@ form h2 {
   color: var(--blue);
   font-size: 30px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 input[type="text"] {
-  margin-top: 12px;
   background-color:rgba(0 118 181 / 0.1);
   padding: 10px;
   width: 100%;
-  margin-top: 12px;
+  margin-top: 20px;
   border-radius: var(--small-border-radius);
 }
 
 .forgot {
-  margin-top: 12px;
+  margin-top: 10px;
+  color: var(--medium-gray);
 }
 
 .forgot li {
@@ -54,7 +61,7 @@ input[type="text"] {
 }
 
 .forgot a {
-  color: var(--black);
+  color: var(--medium-gray);
   text-decoration: none;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
@@ -65,7 +72,7 @@ input[type="text"] {
 }
 
 input[type="button"] {
-  margin-top: 12px;
+  margin-top: 20px;
   width: 48%;
 }
 
