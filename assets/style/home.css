@@ -24,6 +24,18 @@ header > div {
   line-height: 60px;
 }
 
+.header-left, .header-right {
+  width: 270px;
+}
+
+.header-left {
+  justify-content: start;
+}
+
+.header-right {
+  justify-content: end;
+}
+
 .logo-wrapper {
   img {
     height: 35px;
@@ -98,6 +110,7 @@ nav ul li a {
 .profile {
   text-align: center;
   background-color: var(--white);
+  border-radius: var(--small-border-radius);
 }
 
 .user-info {
@@ -181,6 +194,7 @@ nav ul li a {
 .create-post, .created-post-display {
   padding: 20px;
   background-color: var(--white);
+  border-radius: var(--small-border-radius);
 }
 
 /* User create post */
@@ -209,6 +223,12 @@ nav ul li a {
 .send-icon {
   color: var(--blue);
   font-size: 26px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.send-icon:hover {
+  color: var(--accent-blue);
 }
 
 /* Friends post */
@@ -257,6 +277,7 @@ nav ul li a {
 
 .post-image img {
   width: 100%;
+  border-radius: var(--small-border-radius);
 }
 
 .post-actions {
@@ -276,7 +297,8 @@ nav ul li a {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .suggestions {
   background-color: var(--white);
-  padding: 20px
+  padding: 20px;
+  border-radius: var(--small-border-radius);
 }
 
 .suggestions h3 {
@@ -321,6 +343,20 @@ nav ul li a {
       color: var(--medium-gray);
     }
   }
+}
+
+.person-container > div:nth-child(2) {
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--very-light-gray);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.person-container > div:nth-child(2):hover {
+  background-color: rgba(0, 161, 220, 0.15);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
