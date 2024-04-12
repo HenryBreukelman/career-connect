@@ -13,7 +13,7 @@ const fullNames = utils.selectAll('.person-container p:nth-of-type(1)');
 const cities = utils.selectAll('.person-container p:nth-of-type(2)');
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*  getUsers                                            */
+/*  Fetch Users                                          */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 const options = {
   method: 'GET',
@@ -32,8 +32,9 @@ async function getUsers(endpoint) {
       throw new Error(`${result.statusText} (${result.status})`)
     }
 
-    const data = await result.json();
-    console.log(data.results);
+    const users = await result.json();
+    const userList = users.results;
+    console.log(userList);
   } catch(error) {
     console.log(error.message);
   }
