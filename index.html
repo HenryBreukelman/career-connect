@@ -27,9 +27,11 @@
           <div class="form center">
             <form>
               <h2>Welcome</h2>
-              <input type="text" placeholder="Username or Email">
-              <input type="text" placeholder="Password">
-              <p class="error">Incorect Username or password</p>
+              <input type="text" placeholder="Username or Email" class="username">
+              <input type="text" placeholder="Password" class="password">
+              <div class="error">
+                <p class="error-popup hidden">Incorect Username or password</p>
+              </div>
               <div class="flex spacebetween forgot">
                 <div>
                   <input type="checkbox" id="email" value="Emails">
@@ -38,7 +40,7 @@
                 <li><a href="#">Forgot password?</a></li>
               </div>
               <div class="flex spacebetween">
-                <input type="button" value="Login" class="blue-button">
+                <input type="button" value="Login" class="blue-button login-button">
                 <input type="button" value="Sign up" class="white-button">
               </div>
             </form>
