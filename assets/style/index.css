@@ -7,7 +7,7 @@
 }
 
 .image {
-  background: var(--black) url(../media/todd-trapani-Fgp8p6KD_Ks-unsplash.jpg) center bottom / cover no-repeat;
+  background: var(--white) url(../media/todd-trapani-Fgp8p6KD_Ks-unsplash.jpg) center bottom / cover no-repeat;
   max-width: 650px;
 }
 
