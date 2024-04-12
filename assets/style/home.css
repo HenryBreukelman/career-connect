@@ -87,6 +87,7 @@ nav ul li a {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  align-items: start;
   gap: 20px;
 }
 
