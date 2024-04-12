@@ -50,7 +50,7 @@ body {
 }
 
 .container {
-  width: min(100% - 30px, 1080px);
+  width: min(100% - 30px, 1280px);
   margin-inline: auto;
 }
 
