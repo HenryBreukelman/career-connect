@@ -327,6 +327,20 @@ nav ul li a {
   }
 }
 
+.person-container > div:nth-child(2) {
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--very-light-gray);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.person-container > div:nth-child(2):hover {
+  background-color: rgba(0, 161, 220, 0.15);
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Footer                                               */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
