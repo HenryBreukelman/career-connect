@@ -41,6 +41,8 @@
   --accent-purple: #8d6cab;
   --accent-red: #dd5143;
   --accent-orange: #e68523;
+  --small-border-radius: 5px;
+  --big-border-radius: 10px;
 }
 
 body {
@@ -50,4 +52,32 @@ body {
 .container {
   width: min(100% - 30px, 1080px);
   margin-inline: auto;
+}
+
+input[type="button"] {
+  transition: all 0.25s ease-in-out;
+  padding: 5px 10px;
+  border-radius: var(--small-border-radius);
+}
+
+.blue-button {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.blue-button:hover {
+  background-color: var(--accent-blue);
+  color: var(--white);
+}
+
+.white-button {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.white-button:hover {
+  background-color: var(--white);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue);
 }
