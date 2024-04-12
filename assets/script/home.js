@@ -61,11 +61,11 @@ async function getUsers(endpoint) {
 
     const users = await result.json();
     const userList = users.results;
-    return userList;
+    setUsers(userList);
   } catch(error) {
     console.log(error.message);
   }
 }
 
-console.log(getUsers(URL));
+getUsers(URL);
 
