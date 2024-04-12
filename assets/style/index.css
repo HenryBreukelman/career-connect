@@ -1,14 +1,14 @@
 @import url('base.css');
 
 .column {
-  width: 50%;
+
   height: calc(100svh);
   padding: 20px 40px 20px 20px;
 }
 
 .image {
+  width: 40%;
   background: var(--white) url(../media/login-backgound.jpg) center bottom / cover no-repeat;
-  max-width: 650px;
 }
 
 .image img {
@@ -23,6 +23,7 @@
 }
 
 .login-box {
+  width: 60%;
   position: relative;
 }
 
