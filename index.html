@@ -19,23 +19,32 @@
   <body>
     <main>
       <div class="flex gap-20">
-        <div class="image column">
+        <section class="image column">
           <h2>CareerConnect</h2>
-        </div>
-        <div class="login-box column center">
-          <div></div>
-          <form>
-            <h2>Welcome</h2>
-            <input type="text" placeholder="Username or Email">
-            <input type="text" placeholder="Password">
-            <p>Forgot password?</p>
-            <input type="button" value="Login">
-            <input type="button" value="Sign up">
-          </form>
+        </section>
+        <section class="login-box column center">
+          <div class="form">
+            <form>
+              <h2>Welcome</h2>
+              <input type="text" placeholder="Username or Email">
+              <input type="text" placeholder="Password">
+              <div class="flex spacebetween">
+                <div>
+                  <input type="checkbox" id="email" value="Emails">
+                  <label for="email">Receive Emails</label>
+                </div>
+                <p>Forgot password?</p>
+              </div>
+              <div class="flex spacebetween">
+                <input type="button" value="Login" class="blue-button">
+                <input type="button" value="Sign up" class="white-button">
+              </div>
+            </form>
+          </div>
           <div class="copy-right">
             <p> &copy; 2024 CareerConnect</p>
           </div>
-        </div>
+        </section>
       </div>
     </main>
   </body>
