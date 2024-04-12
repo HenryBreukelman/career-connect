@@ -50,6 +50,12 @@ input[type="text"] {
   border-radius: var(--small-border-radius);
 }
 
+.error {
+  height: 16px;
+  font-size: 14px;
+  color: #f00;
+}
+
 .forgot {
   margin-top: 10px;
   color: var(--medium-gray);
