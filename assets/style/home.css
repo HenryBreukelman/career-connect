@@ -259,7 +259,6 @@ nav ul li a {
 
 .post-actions {
   align-items: center;
-  gap: 30px;
 
   > div {
     cursor: pointer;
