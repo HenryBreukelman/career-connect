@@ -111,6 +111,21 @@ nav ul li a {
   text-align: center;
   background-color: var(--white);
   border-radius: var(--small-border-radius);
+  position: relative;
+}
+
+.edit-icon {
+  color: var(--medium-gray);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.edit-icon:hover {
+  color: var(--dark-gray);
 }
 
 .user-info {
@@ -134,6 +149,12 @@ nav ul li a {
 
   span {
     color: var(--medium-gray);
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+  }
+
+  span:hover {
+    color: var(--dark-gray);
   }
 
   i {
@@ -207,7 +228,11 @@ nav ul li a {
   align-items: center;
 }
 
-.post-input textarea{
+.post-options > div:first-child div {
+  cursor: pointer;
+}
+
+.post-input textarea {
   resize: none;
   height: 140px;
   width: 100%;
@@ -287,8 +312,13 @@ nav ul li a {
     cursor: pointer;
   }
 
+  div:hover > * {
+    color: var(--dark-gray);
+  }
+
   i, span {
     color: var(--medium-gray);
+    transition: all 0.25s ease-in-out;
   }
 }
 
