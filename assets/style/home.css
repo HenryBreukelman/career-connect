@@ -228,7 +228,11 @@ nav ul li a {
   align-items: center;
 }
 
-.post-input textarea{
+.post-options > div:first-child div {
+  cursor: pointer;
+}
+
+.post-input textarea {
   resize: none;
   height: 140px;
   width: 100%;
@@ -308,11 +312,8 @@ nav ul li a {
     cursor: pointer;
   }
 
-  > div:hover {
-    >* {
-      color: var(--dark-gray);
-    }
-    
+  div:hover > * {
+    color: var(--dark-gray);
   }
 
   i, span {
