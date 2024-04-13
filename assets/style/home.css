@@ -111,6 +111,21 @@ nav ul li a {
   text-align: center;
   background-color: var(--white);
   border-radius: var(--small-border-radius);
+  position: relative;
+}
+
+.edit-icon {
+  color: var(--medium-gray);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.edit-icon:hover {
+  color: var(--dark-gray);
 }
 
 .user-info {
