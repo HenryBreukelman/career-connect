@@ -308,8 +308,16 @@ nav ul li a {
     cursor: pointer;
   }
 
+  > div:hover {
+    >* {
+      color: var(--dark-gray);
+    }
+    
+  }
+
   i, span {
     color: var(--medium-gray);
+    transition: all 0.25s ease-in-out;
   }
 }
 
