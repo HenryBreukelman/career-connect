@@ -149,6 +149,12 @@ nav ul li a {
 
   span {
     color: var(--medium-gray);
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+  }
+
+  span:hover {
+    color: var(--dark-gray);
   }
 
   i {
