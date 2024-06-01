@@ -352,7 +352,7 @@ nav ul li a {
 .person-container > div {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 
   img {
     height: 40px;

@@ -35,7 +35,7 @@ function checkLogin() {
   let savedUser = localStorage.getItem('user');
   let userInfo = JSON.parse(savedUser);
   if (
-    username.value === userInfo.userUsername && password.value === userInfo.userPassword
+    username.value.trim() === userInfo.userUsername && password.value.trim() === userInfo.userPassword
   ) {
     correctLogin();
   } else {
